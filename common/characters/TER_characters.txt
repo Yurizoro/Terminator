@@ -1,0 +1,15 @@
+characters={
+	GER_sky_net={
+		name=GER_skynet
+		portraits={
+			civilian={
+				large=Sky_Net
+			}
+		}
+		country_leader={
+			ideology=nazism
+			traits={ dictator }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}

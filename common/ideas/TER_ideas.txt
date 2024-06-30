@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+
+		machine_supremacy = {
+            allowed = {
+				always = no
+            }
+
+			removal_cost = -1
+            #picture = 
+
+            modifier = {
+                army_org_factor = 0,5
+				production_factory_efficiency_gain_factor = 0.15
+            }
+        }
+	}
+}

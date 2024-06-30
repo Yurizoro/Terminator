@@ -1,0 +1,20 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 2018.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "TER"
+		default = yes
+		
+		"TER"={
+            minor = no
+            history = TAG_GATHERING_STORM_DESC     
+            ideology = fascism
+            ideas = {
+                #твои идеи
+            }
+            focuses = {
+                #твои фокусы
+            }
+        }
