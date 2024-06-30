@@ -1,0 +1,30 @@
+state = {
+    id = 970
+    name = "STATE_970"
+    manpower = 121764
+    state_category = metropolis
+    resources = {
+        steel = 35
+        aluminium = 14
+    }
+
+    history = {
+        owner = TER
+        add_core_of = TER
+        victory_points = {
+           9671  25
+        }
+        buildings = {
+            infrastructure = 5
+            industrial_complex = 2
+            arms_factory = 10
+            air_base = 6
+        }
+        add_core_of = SOP
+    }
+    
+    provinces = {
+        9671 3678 3677 9637
+    }
+	local_supplies = 0.0
+}
