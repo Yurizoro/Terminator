@@ -1,6 +1,6 @@
-capital = 378
+capital = 970
 
-oob = "SOP_2018"
+oob = "TCL_1936"
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "BEL_1936_air_bba"
@@ -15,7 +15,7 @@ if = {
 set_research_slots = 3
 set_stability = 0.8
 set_war_support = 0.3 #we see what you are doing there Adolf
-
+set_convoys = 200
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -44,12 +44,18 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Alex_Reyes"
-	desc = "Alex_Reyes_DESC"
-	picture = "gfx/leaders/TER/Alex_Reyas.dds"
+	name = "Terminator"
+	desc = "Terminator_DESC"
+	picture = "gfx/leaders/TER/Sky_Net.dds"
 	expire="1965.1.1.1"
 	ideology=nazism
 	traits = {
 		dictator
 	}
 }
+
+add_ideas = {
+	machine_supremacy
+}
+
+

@@ -263,6 +263,7 @@ RIG = "countries/Rio Grande.txt"
 QUE = "countries/Quebec.txt"
 TER = "countries/Terminator.txt"
 SOP = "countries/California.txt"
+TCL = "countries/TermiCalifornia.txt"
 
 # WELSH ARGENTINA
 WLA = "countries/Welsh Argentina.txt"
