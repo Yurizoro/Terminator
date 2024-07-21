@@ -1,0 +1,69 @@
+ideas = {
+	country = {
+
+		intelligence_operations_ideas = {
+            allowed = {
+				always = no
+            }
+
+			removal_cost = -1
+            #picture = 
+
+            modifier = {
+				operation_outcome = 0.1
+            }
+        }
+		Uniting_Factions_ideas = {
+            allowed = {
+				always = no
+            }
+
+			removal_cost = -1
+            #picture = 
+
+            modifier = {
+				army_org_regain = 0.08
+				training_time_army_factor = -0.05
+            }
+        }
+		Call_Volunteers_ideas = {
+            allowed = {
+				always = no
+            }
+
+			removal_cost = -1
+            #picture = 
+
+            modifier = {
+				weekly_manpower = 1000
+				war_support_weekly = 0.005
+            }
+        }
+        Development_Security_Systems_ideas = {
+         allowed = {
+         always = no
+         }
+
+      removal_cost = -1
+         #picture = 
+
+         modifier = {
+         production_speed_bunker_factor = 0.3
+         army_defence_factor = 0.1
+         }
+     }
+     Strengthening_Logistics_ideas = {
+      allowed = {
+      always = no
+      }
+
+   removal_cost = -1
+      #picture = 
+
+      modifier = {
+         supply_factor = 0.03
+         attrition = -0.05
+      }
+  }
+	}
+}

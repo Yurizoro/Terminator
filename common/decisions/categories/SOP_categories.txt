@@ -1,0 +1,15 @@
+TWM_SOP_Operation_Dark_Dawn_decisions = {
+	icon = decision_category_ger_reichskommissariats
+	priority = 100
+
+	allowed = {original_tag = SOP}
+
+	visible = {
+		has_completed_focus = TWM_SOP_Operation_Dark_Dawn
+	}
+}
+
+SOP_debug = {
+	priority = 200
+	allowed = {is_debug = yes}
+}

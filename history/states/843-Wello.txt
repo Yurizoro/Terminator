@@ -12,15 +12,7 @@ state={
 			TER_state_development_local_building_slots_factor = -0.3
 
 		}
-		add_dynamic_modifier = {
-			modifier = TER_state_development_dynamic_modifier
 
-		}
-		add_dynamic_modifier = {
-			modifier = TER_state_decentralization_dynamic_modifier
-			scope = TER
-
-		}
 		buildings = {
 
 		}

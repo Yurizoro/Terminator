@@ -7,8 +7,7 @@ bookmarks = {
 		default_country = "TER"
 		default = yes
 		
-		"TER"={
-            minor = no
+		TER = {
             history = TAG_GATHERING_STORM_DESC     
             ideology = fascism
             ideas = {
@@ -18,3 +17,5 @@ bookmarks = {
                 #твои фокусы
             }
         }
+    }
+}
