@@ -1,4 +1,4 @@
-add_namespace = TWM_SOP
+add_namespace = SOP
 add_namespace = SOP_news
 
     #country_event = {
@@ -21,28 +21,28 @@ add_namespace = SOP_news
     #}
 
     #news_event = {
-    #    id = ZGM_GER_news.1
-    #    title = ZGM_GER_news.1.t
-    #    desc = ZGM_GER_news.1.d
+    #    id = SOV_news.1
+    #    title = SOV_news.1.t
+    #    desc = SOV_news.1.d
 
     #    is_triggered_only = yes
     #    picture = GFX_
 
     #    option = {
-    #        name = ZGM_GER_news.1.a
+    #        name = SOV_news.1.a
     #    }
     #}
 
-	    country_event = {
-       id = SOP.1
-       title = SOP.1.t
-       desc =  SOP.1.d
-      #picture = GFX_
+    news_event = {
+        id = SOV_news.1
+        title = SOV_news.1.t
+        desc = SOV_news.1.d
 
-       is_triggered_only = no
+        is_triggered_only = yes
+        fire_for_sender = yes
+        picture = GFX_
 
-       option = {
-           name = SOP.1.a
-    
-       }
+        option = {
+            name = SOV_news.1.a
+        }
     }

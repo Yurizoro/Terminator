@@ -1,30 +1,20 @@
-TWM_SOP_Operation_Dark_Dawn_decisions = {
+SOP_Operation_Dark_Dawn_decisions = {
 	Operation_Dark_Dawn = {
+		visible = {has_completed_focus = SOP_Operation_Dark_Dawn}
 		complete_effect = {
-			visible = {
-				has_completed_focus = TWM_SOP_Operation_Dark_Dawn
-			}
 			start_border_war = {
 				change_state_after_war = yes
 				attacker = {
 					state = 378
 					num_provinces = 4
-					on_win = SOP_border_attack.1
-					on_lose = japan_border_conflict.3
-					on_cancel = japan_border_conflict.4
-					modifier = 0.1
-					dig_in_factor = 0
-					terrain_factor = 0
-				}	
+					#on_win = 
+				}
 				defender = {
 					state = 971
 					num_provinces = 1
-					on_win = japan_border_conflict.3
-					on_lose = japan_border_conflict.2
-					on_cancel = japan_border_conflict.4
+					#on_win =
 				}
 			}
-			FROM = {country_event = SOP.1}
 		}
 	}
 }

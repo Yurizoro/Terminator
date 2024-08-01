@@ -8,7 +8,18 @@ bookmarks = {
 		default = yes
 		
 		TER = {
-            history = TAG_GATHERING_STORM_DESC     
+            history = TER_GATHERING_STORM_DESC     
+            ideology = fascism
+            ideas = {
+                #твои идеи
+            }
+            focuses = {
+                #твои фокусы
+            }
+        }
+
+        SOP = {
+            history = SOP_GATHERING_STORM_DESC     
             ideology = fascism
             ideas = {
                 #твои идеи

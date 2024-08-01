@@ -1,5 +1,6 @@
 focus_tree = {
-	id = TWM_SOP
+
+	id = SOP
 	country = {
 		factor = 0
 		modifier = {
@@ -7,21 +8,20 @@ focus_tree = {
 			original_tag = SOP
 		}
 	}
-	continuous_focus_position = { x = 100 y = 1500}
-	
-	initial_show_position = {x = 0 y = 0}
 
+	continuous_focus_position = { x = 100 y = 1500}
+	initial_show_position = {x = 0 y = 0}
 	default = no
 
-		#шаблон
+	#шаблон
 	#focus = { 
-	#	id = TWM_SOP_
+	#	id = SOP_
 	#	icon = GFX_
 	#	cost = 10
 
-	#	prerequisite = {focus = TWM_SOP_}
+	#	prerequisite = {focus = SOP_}
 
-	#	relative_position_id = TWM_SOP_
+	#	relative_position_id = SOP_
 	#	x = x
 	#	y = x
 
@@ -35,23 +35,27 @@ focus_tree = {
 	#}
 
 	focus = { 
-		id = TWM_SOP_alex_reyas
+		id = SOP_alex_reyas
 		#icon = GFX_
 		cost = 5
+
 		x = 7
 		y = 0
 
-		completion_reward = { add_stability = 0.05 }
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = -0.1 
+		}
 	}
 
-		focus = { 
-		id = TWM_SOP_intelligence_operations
+	focus = { 
+		id = SOP_intelligence_operations
 		#icon = GFX_
 		cost = 5
 
-		prerequisite = {focus = TWM_SOP_alex_reyas}
+		prerequisite = {focus = SOP_alex_reyas}
 
-		relative_position_id = TWM_SOP_alex_reyas
+		relative_position_id = SOP_alex_reyas
 		x = -1
 		y = 1
 
@@ -59,19 +63,17 @@ focus_tree = {
 
 		}
 
-		completion_reward = {
-			add_ideas = intelligence_operations_ideas
-		}
+		completion_reward = {add_ideas = SOP_intelligence_operations_idea}
 	}
 
-		focus = { 
-		id = TWM_SOP_Uniting_Factions
+	focus = { 
+		id = SOP_uniting_factions
 		#icon = GFX_
 		cost = 5
 
-		prerequisite = {focus = TWM_SOP_alex_reyas}
+		prerequisite = {focus = SOP_alex_reyas}
 
-		relative_position_id = TWM_SOP_alex_reyas
+		relative_position_id = SOP_alex_reyas
 		x = 1
 		y = 1
 
@@ -79,38 +81,35 @@ focus_tree = {
 
 		}
 
-		completion_reward = {
-			add_ideas = Uniting_Factions_ideas
-		}
+		completion_reward = {add_ideas = SOP_uniting_factions_idea}
 	}
-		focus = { 
-		id = TWM_SOP_Call_Volunteers
+	focus = { 
+		id = SOP_call_volunteers
 		#icon = GFX_
 		cost = 10
 
-		prerequisite = {focus = TWM_SOP_Uniting_Factions}
-		prerequisite = {focus = TWM_SOP_intelligence_operations}
-		relative_position_id = TWM_SOP_alex_reyas
-		x = x
+		prerequisite = {focus = SOP_uniting_factions}
+		prerequisite = {focus = SOP_intelligence_operations}
+
+		relative_position_id = SOP_alex_reyas
+		x = 0
 		y = 2
 
 		available = {
 
 		}
 
-		completion_reward = {
-			add_timed_idea = {idea = Call_Volunteers_ideas days = 365}
-		}
+		completion_reward = {add_timed_idea = {idea = SOP_call_Volunteers_idea days = 365}}
 	}
 
-		focus = { 
-		id = TWM_SOP_Development_Security_Systems
+	focus = { 
+		id = SOP_development_security_systems
 		#icon = GFX_
 		cost = 5
 
-		prerequisite = {focus = TWM_SOP_Call_Volunteers}
+		prerequisite = {focus = SOP_call_volunteers}
 
-		relative_position_id = TWM_SOP_Call_Volunteers
+		relative_position_id = SOP_call_volunteers
 		x = -1
 		y = 1
 
@@ -120,18 +119,20 @@ focus_tree = {
 
 		completion_reward = {
 			add_timed_idea = {
-				idea = Development_Security_Systems_ideas days = 365
+				idea = SOP_development_security_systems_ideas
+				days = 365
 			}
 		}
 	}
-		focus = { 
-		id = TWM_SOP_Strengthening_Logistics
+
+	focus = { 
+		id = SOP_strengthening_logistics
 		#icon = GFX_
 		cost = 5
 
-		prerequisite = {focus = TWM_SOP_Call_Volunteers}
+		prerequisite = {focus = SOP_call_volunteers}
 
-		relative_position_id = TWM_SOP_Call_Volunteers
+		relative_position_id = SOP_call_volunteers
 		x = 1
 		y = 1
 
@@ -139,19 +140,18 @@ focus_tree = {
 
 		}
 
-		completion_reward = {
-			add_ideas = Strengthening_Logistics_ideas
-		}
+		completion_reward = {add_ideas = SOP_strengthening_Logistics_idea}
 	}
-		focus = { 
-		id = TWM_SOP_Operation_Dark_Dawn
+
+	focus = { 
+		id = SOP_operation_dark_dawn
 		#icon = GFX_
 		cost = 10
 
-		prerequisite = {focus = TWM_SOP_Strengthening_Logistics}
-		prerequisite = {focus = TWM_SOP_Development_Security_Systems}
+		prerequisite = {focus = SOP_strengthening_logistics}
+		prerequisite = {focus = SOP_development_security_systems}
 
-		relative_position_id = TWM_SOP_Call_Volunteers
+		relative_position_id = SOP_call_volunteers
 		x = 0
 		y = 2
 
@@ -159,8 +159,6 @@ focus_tree = {
 
 		}
 
-		completion_reward = {
-			unlock_decision_category_tooltip = TWM_SOP_Operation_Dark_Dawn_decisions
-		}
+		completion_reward = {unlock_decision_category_tooltip = SOP_Operation_Dark_Dawn_decisions}
 	}
 }
