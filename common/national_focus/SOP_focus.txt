@@ -35,7 +35,7 @@ focus_tree = {
 	#}
 
 	focus = { 
-		id = SOP_alex_reyas
+		id = SOP_alex_reyas_foc
 		#icon = GFX_
 		cost = 5
 
@@ -53,15 +53,11 @@ focus_tree = {
 		#icon = GFX_
 		cost = 5
 
-		prerequisite = {focus = SOP_alex_reyas}
+		prerequisite = {focus = SOP_alex_reyas_foc}
 
-		relative_position_id = SOP_alex_reyas
+		relative_position_id = SOP_alex_reyas_foc
 		x = -1
 		y = 1
-
-		available = {
-
-		}
 
 		completion_reward = {add_ideas = SOP_intelligence_operations_idea}
 	}
@@ -71,15 +67,11 @@ focus_tree = {
 		#icon = GFX_
 		cost = 5
 
-		prerequisite = {focus = SOP_alex_reyas}
+		prerequisite = {focus = SOP_alex_reyas_foc}
 
-		relative_position_id = SOP_alex_reyas
+		relative_position_id = SOP_alex_reyas_foc
 		x = 1
 		y = 1
-
-		available = {
-
-		}
 
 		completion_reward = {add_ideas = SOP_uniting_factions_idea}
 	}
@@ -91,13 +83,9 @@ focus_tree = {
 		prerequisite = {focus = SOP_uniting_factions}
 		prerequisite = {focus = SOP_intelligence_operations}
 
-		relative_position_id = SOP_alex_reyas
+		relative_position_id = SOP_alex_reyas_foc
 		x = 0
 		y = 2
-
-		available = {
-
-		}
 
 		completion_reward = {add_timed_idea = {idea = SOP_call_Volunteers_idea days = 365}}
 	}
@@ -112,10 +100,6 @@ focus_tree = {
 		relative_position_id = SOP_call_volunteers
 		x = -1
 		y = 1
-
-		available = {
-
-		}
 
 		completion_reward = {
 			add_timed_idea = {
@@ -136,10 +120,6 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		available = {
-
-		}
-
 		completion_reward = {add_ideas = SOP_strengthening_Logistics_idea}
 	}
 
@@ -155,11 +135,10 @@ focus_tree = {
 		x = 0
 		y = 2
 
-		available = {
-
+		completion_reward = {
+			unlock_decision_category_tooltip = SOP_operation_category
+			unlock_decision_tooltip = operation_dark_dawn_dec
 		}
-
-		completion_reward = {unlock_decision_category_tooltip = SOP_operation_category}
 	}
 
 	focus = { 
@@ -173,52 +152,66 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		available = {
+		completion_reward = {unlock_decision_tooltip = operation_dawn_dec}
+	}
 
+	focus = { 
+		id = SOP_creating_secret_base
+
+		#icon = GFX_
+		cost = 10
+
+		prerequisite = {focus = SOP_operation_dawn}
+
+		relative_position_id = SOP_operation_dawn
+		x = -1
+		y = 1
+
+		completion_reward = {
+			random_owned_state = {
+				add_resource = {
+					type = steel
+					amount = 6
+					show_state_in_tooltip = yes
+				}
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
 		}
+	}
+
+	focus = { 
+		id = SOP_support_from_the_survivors
+		#icon = GFX_
+		cost = 10
+
+		prerequisite = {focus = SOP_operation_dawn}
+
+		relative_position_id = SOP_operation_dawn
+		x = 1
+		y = 1
 
 		completion_reward = {
 
 		}
 	}
 
-	#focus = { 
-	#	id = SOP_
-	#	icon = GFX_
-	#	cost = 10
+	focus = { 
+		id = SOP_change_of_command
+		#icon = GFX_
+		cost = 10
 
-	#	prerequisite = {focus = SOP_}
+		prerequisite = {focus = SOP_creating_secret_base}
+		prerequisite = {focus = SOP_support_from_the_survivors}
 
-	#	relative_position_id = SOP_
-	#	x = x
-	#	y = x
+		relative_position_id = SOP_operation_dawn
+		x = 0
+		y = 2
 
-	#	available = {
-
-	#	}
-
-	#	completion_reward = {
-
-	#	}
-	#}
-
-	#focus = { 
-	#	id = SOP_
-	#	icon = GFX_
-	#	cost = 10
-
-	#	prerequisite = {focus = SOP_}
-
-	#	relative_position_id = SOP_
-	#	x = x
-	#	y = x
-
-	#	available = {
-
-	#	}
-
-	#	completion_reward = {
-
-	#	}
-	#}
+		completion_reward = {
+			country_event = SOP.8
+		}
+	}
 }

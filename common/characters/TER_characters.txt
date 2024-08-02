@@ -1,6 +1,6 @@
 characters={
-	GER_sky_net={
-		name=GER_skynet
+	TER_sky_net={
+		name=TER_skynet
 		portraits={
 			civilian={
 				large=Sky_Net
@@ -8,9 +8,8 @@ characters={
 		}
 		country_leader={
 			ideology=nazism
-			traits={ dictator }
-			expire="1965.1.1.1"
-			id=-1
+			traits={dictator}
+			expire="9999.1.1.1"
 		}
 	}
 }

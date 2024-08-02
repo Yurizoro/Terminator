@@ -89,9 +89,11 @@ add_namespace = SOP
         }
     }
 
-    country_event = { #начало погран. конфликта
+    country_event = { #начало операции "заря" конфликта
         id = SOP.4
-        title = SOP.4.t
+        title = {
+            
+        }
         desc = SOP.4.d
 
         is_triggered_only = yes
@@ -118,7 +120,7 @@ add_namespace = SOP
 
         immediate = {
             hidden_effect = {
-
+                add_manpower = 3000
             }
         }
 
@@ -143,5 +145,36 @@ add_namespace = SOP
 
         option = {
             name = SOP.6.a
+        }
+    }
+
+    country_event = { #последующие вылазки
+        id = SOP.7
+        title = SOP.7.t
+        desc = SOP.7.d
+
+        is_triggered_only = yes
+        #picture = GFX_
+
+        option = {
+            name = SOP.7.a
+        }
+    }
+
+    country_event = { #смена правительства
+        id = SOP.8
+        title = SOP.8.t
+        desc = SOP.8.d
+
+        is_triggered_only = yes
+        #picture = GFX_
+
+        option = {
+            name = SOP.8.a
+        }
+
+        option = {
+            name = SOP.8.b
+            retire_country_leader = SOP_Alex_Reyas
         }
     }
