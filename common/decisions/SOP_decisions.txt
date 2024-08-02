@@ -18,11 +18,84 @@ SOP_operation_category = {
 		}
 	}
 	operation_dawn = {
+		war_with_target_on_remove = yes
 		on_map_mode = map_only
 		state_target = yes
-		target_root_trigger = {has_completed_focus = SOP_operation_dawn}
-		target_trigger = {
-			
+		days_remove = 7
+		visible = {
+			has_completed_focus = SOP_operation_dawn
+			check_variable = {
+				var = count_border_war
+				compare = less_than
+				value = 3
+			}
 		}
+		available = {NOT = {has_country_flag = operation_dawn_flag} }
+		target_trigger = {
+			FROM = {
+				AND = {
+					NOT = {is_owned_by = SOP}
+					any_neighbor_state = {is_owned_by = SOP}
+				}	
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = operation_dawn_flag
+				random_owned_state = {
+					limit = {any_neighbor_state = {state = FROM}}
+					meta_effect = {
+						text = {
+							set_variable = {PREV.attack_state = [ID]}
+						}
+						ID = "[THIS.GetID]"
+					}
+					#log = "[THIS.GetID]"
+				}
+				log = "global.attack_state: [?attack_state], PREV: [PREV.GetName]"
+			}
+		}
+		remove_effect = {
+			clr_country_flag = operation_dawn_flag
+			add_to_variable = {
+				var = count_border_war
+				value = 1
+			}
+			SOP = {country_event = SOP.4}
+			log = "global.attack_state2: [?attack_state], PREV2 [PREV.GetName]"
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = PREV.attack_state
+					num_provinces = 100
+					on_win = SOP.5
+					on_lose = SOP.6
+				}
+				defender = {
+					state = FROM
+					num_provinces = 100
+				}
+			}
+		} 
+	}
+}
+
+TWM_debug = {
+	reset_the_border_wars_variable = {
+		visible = {
+			check_variable = {
+				var = count_border_war
+				compare = greater_than_or_equals
+				value = 3
+			}
+		}
+		complete_effect = {
+			set_variable = {count_border_war = 0}
+		}
+	}
+
+	reset_flag = {
+		visible = {has_country_flag = operation_dawn_flag}
+		complete_effect = {clr_country_flag = operation_dawn_flag}
 	}
 }

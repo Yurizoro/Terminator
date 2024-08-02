@@ -167,7 +167,7 @@ focus_tree = {
 		#icon = GFX_
 		cost = 10
 
-		prerequisite = {focus = SOP_}
+		prerequisite = {focus = SOP_operation_dark_dawn}
 
 		relative_position_id = SOP_operation_dark_dawn
 		x = 0

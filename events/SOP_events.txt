@@ -88,3 +88,60 @@ add_namespace = SOP
             name = SOP.3.a
         }
     }
+
+    country_event = { #начало погран. конфликта
+        id = SOP.4
+        title = SOP.4.t
+        desc = SOP.4.d
+
+        is_triggered_only = yes
+        #picture = GFX_
+
+        immediate = {
+            hidden_effect = {
+
+            }
+        }
+
+        option = {
+            name = SOP.4.a
+        }
+    }
+
+    country_event = { #победа в погран. конфликте
+        id = SOP.5
+        title = SOP.5.t
+        desc = SOP.5.d
+
+        is_triggered_only = yes
+        #picture = GFX_
+
+        immediate = {
+            hidden_effect = {
+
+            }
+        }
+
+        option = {
+            name = SOP.5.a
+        }
+    }
+
+    country_event = { #проигрышь в погран. конфликте
+        id = SOP.6 
+        title = SOP.6.t
+        desc = SOP.6.d
+
+        is_triggered_only = yes
+        #picture = GFX_
+
+        immediate = {
+            hidden_effect = {
+
+            }
+        }
+
+        option = {
+            name = SOP.6.a
+        }
+    }
