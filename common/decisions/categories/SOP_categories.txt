@@ -1,12 +1,10 @@
-SOP_Operation_Dark_Dawn_decisions = {
+SOP_operation_category = {
 	icon = decision_category_ger_reichskommissariats
 	priority = 100
 
 	allowed = {original_tag = SOP}
 
-	visible = {
-		has_completed_focus = SOP_Operation_Dark_Dawn
-	}
+	visible = {has_completed_focus = SOP_operation_dark_dawn}
 }
 
 TER_debug = {

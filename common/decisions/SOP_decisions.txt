@@ -1,20 +1,28 @@
-SOP_Operation_Dark_Dawn_decisions = {
-	Operation_Dark_Dawn = {
-		visible = {has_completed_focus = SOP_Operation_Dark_Dawn}
+SOP_operation_category = {
+	operation_dark_dawn_dec = {
 		complete_effect = {
+			SOP = {country_event = SOP.1}
 			start_border_war = {
-				change_state_after_war = yes
+				change_state_after_war = no
 				attacker = {
 					state = 378
 					num_provinces = 4
-					#on_win = 
+					on_win = SOP.2 
+					on_lose = SOP.3
 				}
 				defender = {
 					state = 971
 					num_provinces = 1
-					#on_win =
 				}
 			}
+		}
+	}
+	operation_dawn = {
+		on_map_mode = map_only
+		state_target = yes
+		target_root_trigger = {has_completed_focus = SOP_operation_dawn}
+		target_trigger = {
+			
 		}
 	}
 }

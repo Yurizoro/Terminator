@@ -4,20 +4,9 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC"
 		date = 2018.1.1.12
 		picture = "GFX_select_date_1936"
-		default_country = "TER"
+		default_country = "SOP"
 		default = yes
 		
-		TER = {
-            history = TER_GATHERING_STORM_DESC     
-            ideology = fascism
-            ideas = {
-                #твои идеи
-            }
-            focuses = {
-                #твои фокусы
-            }
-        }
-
         SOP = {
             history = SOP_GATHERING_STORM_DESC     
             ideology = fascism
@@ -28,5 +17,30 @@ bookmarks = {
                 #твои фокусы
             }
         }
+
+
+
+		TCL = {
+            history = TWM_GATHERING_STORM_DESC     
+            ideology = fascism
+            ideas = {
+                #твои идеи
+            }
+            focuses = {
+                #твои фокусы
+            }
+        }
+
+		#TER = {
+        #    history = TER_GATHERING_STORM_DESC     
+        #    ideology = fascism
+        #    ideas = {
+        #        #твои идеи
+        #    }
+        #    focuses = {
+        #        #твои фокусы
+        #    }
+        #}
+
     }
 }
