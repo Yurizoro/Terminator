@@ -39,7 +39,7 @@ focus_tree = {
 		#icon = GFX_
 		cost = 5
 
-		x = 7
+		x = 5	
 		y = 0
 
 		completion_reward = {
@@ -194,7 +194,13 @@ focus_tree = {
 		y = 1
 
 		completion_reward = {
-
+			custom_effect_tooltip = EVERY_OWNED_STATE_TCL
+			hidden_effect = {
+				every_state = {
+					limit = {is_owned_by = TCL}
+					add_resistance = 10
+				}
+			}
 		}
 	}
 

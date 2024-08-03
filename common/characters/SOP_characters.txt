@@ -1,14 +1,14 @@
-character = {
-	SOP_Alex_Reyas={
-		name=SOP_Alex_Reyas
-		portraits={
-			civilian={
-				large="gfx/leaders/TER/Alex_Reyas.dds"
+characters = {
+	SOP_Alex_Reyas = {
+		name = SOP_Alex_Reyas
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TER/Alex_Reyas.dds"
 			}
 		}
-		country_leader={
-			ideology=nazism
-			expire="2065.1.1.1"
+		country_leader = {
+			ideology = nazism
+			expire = "2065.1.1.1"
 		}
 	}
 }

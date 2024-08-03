@@ -1,15 +1,15 @@
-characters={
-	TER_sky_net={
-		name=TER_skynet
-		portraits={
-			civilian={
-				large=Sky_Net
+character = {
+	TER_sky_net = {
+		name = TER_skynet
+		portraits = {
+			civilian = {
+				large = Sky_Net
 			}
 		}
-		country_leader={
-			ideology=nazism
-			traits={dictator}
-			expire="9999.1.1.1"
+		country_leader = {
+			ideology = nazism
+			traits = {dictator}
+			expire = "9999.1.1.1"
 		}
 	}
 }
