@@ -5,7 +5,7 @@ state = { # Jan Mayen
 	state_category = tiny_island
 	history = {
 		owner = TER
-		#add_core_of = TER		
+		#	
 		add_core_of = TER
 		buildings = {
 			13272 = {

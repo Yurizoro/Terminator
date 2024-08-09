@@ -3,7 +3,7 @@ characters = {
 		name = SOP_Alex_Reyas
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/TER/Alex_Reyas.dds"
+				large = SOP_Alex_Reyas_port
 			}
 		}
 		country_leader = {

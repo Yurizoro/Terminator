@@ -18,7 +18,7 @@ state = {
 		}
 		add_core_of = TER
 		add_core_of = TER
-		add_core_of = LBV
+		
 		start_resistance = TER #Yugoslavia shouldn't resist occupation
 		set_compliance = 70 #TODO_Manu: Check if this is okay when it comes to collab government
 

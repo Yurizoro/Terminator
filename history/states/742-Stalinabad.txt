@@ -13,8 +13,8 @@ state = {
 
 		}
 		add_core_of = TER
-		add_core_of = TAJ
-		add_core_of = BUK
+		
+		
 
 	}
 

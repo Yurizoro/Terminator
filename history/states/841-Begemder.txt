@@ -31,7 +31,7 @@ state = {
 		
 		owner = TER
 		add_core_of = TER
-		add_core_of = QEM
+		
 
 		1936.6.1 = {
 			owner = TER

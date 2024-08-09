@@ -36,7 +36,7 @@ state = {
 		
 		owner = TER
 		add_core_of = TER
-		add_core_of = GBA
+		
 
 		1936.6.1 = {
 			owner = TER

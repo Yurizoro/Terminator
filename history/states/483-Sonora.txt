@@ -8,13 +8,14 @@ state={
 
 	history={
 		owner = TCL
+
 		buildings = {
 			infrastructure = 2
 			4908 = {
 				naval_base = 3
 			}
 		}
-		add_core_of = SOP
+		
 		#victory_points = {
 		#	4977 3
 		#}

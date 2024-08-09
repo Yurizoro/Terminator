@@ -17,7 +17,7 @@ state={
 			6682 1 
 		}
 		add_core_of = TER
-		add_core_of = TRA
+		
 	}
 
 	provinces={

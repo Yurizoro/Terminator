@@ -9,3 +9,5 @@ tags={
 }
 name="Terminator world mod"
 supported_version="1.14.7"
+
+replace_path="history/countries"

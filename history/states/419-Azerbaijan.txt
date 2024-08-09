@@ -20,8 +20,8 @@ state={
 			1822 1 
 		}
 		add_core_of = TER
-		add_core_of = KUR
-		add_core_of = AZR
+		
+		
 	}
 
 	provinces={

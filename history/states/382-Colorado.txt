@@ -11,11 +11,12 @@ state={
 
 	history={
 		owner = TCL
+
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		add_core_of = SOP
+		
 		victory_points = {
 			1827 5 
 		}

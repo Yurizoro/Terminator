@@ -6,7 +6,7 @@ state={
 	}
 
 	history={
-		add_core_of = VIN
+		
 		owner = TER
 		victory_points = {
 			4401 3 

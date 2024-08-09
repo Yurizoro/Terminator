@@ -7,7 +7,7 @@ state={
 
 	history={
 		owner = TER
-		add_core_of = MAD
+		
 		buildings = {
 			infrastructure = 2
 			13072 = {

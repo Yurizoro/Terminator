@@ -15,7 +15,7 @@ state={
 		}
 		add_core_of = TER
 		add_claim_by = TER
-		add_claim_by = UKR
+		
 
 		1939.3.14 = {
 			owner = TER

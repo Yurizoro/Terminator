@@ -1,0 +1,10 @@
+spriteTypes = {
+    spriteType = {
+        name = "SOP_Alex_Reyas_port"
+        textureFile = "gfx/leaders/SOP/Alex_Reyas.dds"
+    }
+    #spriteType = {
+    #    name = "TER_Terminator_port"
+    #    textureFile = "gfx/leaders/SOP/Alex_Reyas.dds"
+    #}
+}

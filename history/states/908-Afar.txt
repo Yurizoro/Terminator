@@ -23,7 +23,7 @@ state = {
 		}
 		owner = AFA
 		add_core_of = TER
-		add_core_of = AFA
+		
 		1936.6.1 = {
 			owner = TER
 			controller = TER
