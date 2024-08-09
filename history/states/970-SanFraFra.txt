@@ -10,6 +10,8 @@ state = {
 
     history = {
         owner = TCL
+        add_core_of = SOP
+
         add_core_of = TER
         victory_points = {
            9671  25
