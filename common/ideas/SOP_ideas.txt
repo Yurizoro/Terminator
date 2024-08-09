@@ -34,7 +34,7 @@ ideas = {
             }
         }
 
-        SOP_development_security_systems_ideas = {
+        SOP_development_security_systems_idea = {
             allowed = {always = no}
 
             removal_cost = -1
@@ -47,9 +47,7 @@ ideas = {
         }
 
         SOP_strengthening_logistics_idea = {
-            allowed = {
-                always = no
-            }
+            allowed = {always = no}
 
             removal_cost = -1
             #picture = 
@@ -58,6 +56,24 @@ ideas = {
                 supply_factor = 0.03
                 attrition = -0.05
             }
+        }
+
+		SOP_experienced_commanders = {
+			allowed = {always = no}
+
+			removal_cost = -1
+			#picture = 
+
+			modifier = {experience_gain_army = 0.05}
+		}
+
+        SOP_partisan_warfare_idea = {
+            allowed = {always = no}
+
+            removal_cost = -1
+            #picture = 
+
+            modifier = {army_speed_factor = 0.05}
         }
 	}
 }

@@ -30,16 +30,15 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = terminator_ideology
 	last_election = "1932.11.27"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 0
-	fascism = 100
-	communism = 0
+	human_ideology = 54
+	terminator_ideology = 46
 }
 
 create_country_leader = {

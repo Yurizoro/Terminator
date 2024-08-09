@@ -3,7 +3,7 @@ character = {
 		name = TER_skynet
 		portraits = {
 			civilian = {
-				large = Sky_Net
+				#large = Sky_Net
 			}
 		}
 		country_leader = {

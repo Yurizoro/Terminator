@@ -1,5 +1,5 @@
 add_namespace = SOP
-add_namespace = SOP
+add_namespace = SOP_news
 
     #country_event = {
     #    id = SOP.1
@@ -32,6 +32,17 @@ add_namespace = SOP
     #        name = SOP.1.a
     #    }
     #}
+    
+    country_event = { #начало игры за Сопротивление
+        id = SOP.start
+        title = SOP.start.t
+        desc = SOP.start.d
+        #picture = GFX_event_picture
+    
+        is_triggered_only = yes
+    
+        option = {name = SOP.start.a}
+    }
 
     country_event = { #начало операции "Темный рассвет"
         id = SOP.1 
@@ -129,7 +140,7 @@ add_namespace = SOP
         }
     }
 
-    country_event = { #проигрышь в погран. конфликте
+    country_event = { #проигрыш в погран. конфликте
         id = SOP.6 
         title = SOP.6.t
         desc = SOP.6.d
@@ -175,6 +186,17 @@ add_namespace = SOP
 
         option = {
             name = SOP.8.b
-            retire_country_leader = SOP_Alex_Reyas
+            #retire_country_leader = SOP_Alex_Reyas
         }
+    }
+
+    country_event = { #Сбор Бронетехники
+        id = SOP.9
+        title = SOP.9.t
+        desc = SOP.9.d
+        #picture = GFX_event_picture
+    
+        is_triggered_only = yes
+    
+        option = {name = SOP.9.a}
     }

@@ -30,27 +30,15 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = terminator_ideology
 	last_election = "1932.11.27"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 0
-	fascism = 100
-	communism = 0
-}
-
-create_country_leader = {
-	name = "Terminator"
-	desc = "Terminator_DESC"
-	picture = "gfx/leaders/TER/Sky_Net.dds"
-	expire="1965.1.1.1"
-	ideology=nazism
-	traits = {
-		dictator
-	}
+	terminator_ideology = 64
+	human_ideology = 26
 }
 
 add_ideas = {

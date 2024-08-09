@@ -1,0 +1,63 @@
+ideologies = {
+	terminator_ideology = {
+		types = {
+			machine_intelligence = {
+			}
+		}
+		
+		color = { 0 0 0 }
+		
+		war_impact_on_world_tension = 0.75
+		faction_impact_on_world_tension = 0.5
+		
+		rules = {
+			can_force_government = no
+			can_puppet = yes
+			can_send_volunteers = no
+			can_declare_war_on_same_ideology = no
+		}
+		
+		can_be_boosted = no
+		can_collaborate = no
+		
+		modifiers = {
+			generate_wargoal_tension = 1.00
+			join_faction_tension = 0.80
+			lend_lease_tension = 0.50
+			send_volunteers_tension = 0.50
+			guarantee_tension = 0.25
+			take_states_cost_factor = 0.25
+			annex_cost_factor = 0.5
+		}
+	}
+	
+	human_ideology = {
+		types = {
+			human_resistance = {
+			}
+		}
+		
+		color = { 65 105 225 }
+		
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.1
+		
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+		
+		can_be_boosted = yes
+		can_collaborate = yes
+		
+		modifiers = {
+			generate_wargoal_tension = 0.5
+			join_faction_tension = -0.5
+			lend_lease_tension = -0.2
+			send_volunteers_tension = 0.2
+			guarantee_tension = -0.5
+			take_states_cost_factor = 0.75
+		}
+	}
+}

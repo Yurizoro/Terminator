@@ -103,7 +103,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_timed_idea = {
-				idea = SOP_development_security_systems_ideas
+				idea = SOP_development_security_systems_idea
 				days = 365
 			}
 		}
@@ -217,5 +217,89 @@ focus_tree = {
 		y = 2
 
 		completion_reward = {country_event = SOP.8}
+	}
+
+	focus = { #SOP_commander_training
+		id = SOP_commander_training
+		#icon = GFX_
+		cost = 10
+
+		x = 10
+		y = 0
+	
+		completion_reward = {
+			army_experience = 50
+			add_ideas = SOP_experienced_commanders
+		}
+	}
+
+	focus = {
+		id = SOP_partisan_warfare
+		#icon = GFX_
+		cost = 10
+
+		prerequisite = {focus = SOP_commander_training}
+
+		relative_position_id = SOP_commander_training
+		x = -1
+		y = 1
+		
+		completion_reward = {add_ideas = SOP_partisan_warfare_idea}
+	}
+
+	focus = {
+		id = SOP_anti_tank_weapons_development
+		#icon = GFX_
+		cost = 10
+
+		prerequisite = {focus = SOP_partisan_warfare}
+
+		relative_position_id = SOP_partisan_warfare
+		x = 0
+		y = 1
+
+		completion_reward = {
+			# Эффекты будут добавлены позже
+		}
+	}
+
+	focus = {
+		id = SOP_armored_vehicle_collection
+		#icon = GFX_
+		cost = 10
+
+		prerequisite = {focus = SOP_commander_training}
+
+		relative_position_id = SOP_commander_training
+		x = 1
+		y = 1
+
+		completion_reward = {
+			division_template = {
+				name = "Бронетанковая дивизия"
+				division_names_group = SOP_ARM_01
+				regiments = {
+					light_armor = { x = 0 y = 0 }
+					light_armor = { x = 0 y = 1 }
+					light_armor = { x = 1 y = 0 }
+					motorized = { x = 1 y = 1 }
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_equipment
+				amount = 40
+				producer = SOP
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 50
+				producer = SOP
+			}
+			create_unit = {
+				division = "name = \"1-я Бронетанковая дивизия\" division_template = \"Бронетанковая дивизия\" start_experience_factor = 0.3"
+				owner = SOP
+			}
+			country_event = SOP.9
+		}
 	}
 }

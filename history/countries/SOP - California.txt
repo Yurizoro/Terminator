@@ -32,16 +32,15 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = human_ideology
 	last_election = "2015.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 0
-	fascism = 100
-	communism = 0
+	human_ideology = 100
+	terminator_ideology = 0
 }
 
 TCL = {
