@@ -108,7 +108,7 @@ technology_categories = {
 	cat_mountaineers_doctrine
 	cat_marines_doctrine
 	cat_paratroopers_doctrine
-
+	terminator_tech
 	mio_cat_tech_all_armor_and_modules #Includes modules and chassis (DOES NOT INCLUDE ARMORED CARS)
 	mio_cat_tech_light_armor_and_modules #Includes modules and stand-alone Amphibious Chassis
 	mio_cat_tech_medium_armor_and_modules #Includes modules and Modern Tank
@@ -205,6 +205,9 @@ technology_folders = {
 	}
 	electronics_folder = {
 		ledger = civilian
+	}	
+	terminator_tech_folder = {
+		ledger = army
 	}
 	#secret_weapons_folder
 }
