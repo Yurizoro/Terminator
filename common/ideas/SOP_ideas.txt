@@ -10,7 +10,7 @@ ideas = {
             modifier = {operation_outcome = 0.1}
         }
 
-		SOP_uniting_Factions_idea = {
+		SOP_uniting_factions_idea = {
             allowed = {always = no}
 
 			removal_cost = -1

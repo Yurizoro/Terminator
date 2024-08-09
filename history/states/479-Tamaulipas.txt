@@ -14,7 +14,7 @@ state = {
 
 		owner = TER
 		add_core_of = TER
-		add_core_of = RIG
+		
 
 		buildings = {
 			infrastructure = 2

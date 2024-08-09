@@ -8,7 +8,7 @@ state = {
 	
 		owner = TER
 		add_core_of = TER
-		add_core_of = QUE
+		
 
 		victory_points = {
 			12223 1

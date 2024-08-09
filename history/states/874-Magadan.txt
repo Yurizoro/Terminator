@@ -15,7 +15,7 @@ state = {
 			infrastructure = 1
 		}
 		add_core_of = TER
-		add_core_of = FER
+		
 	}
 
 	provinces = {

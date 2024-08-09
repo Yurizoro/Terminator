@@ -31,8 +31,8 @@ state = {
 		
 		owner = TER
 		add_core_of = TER
-		add_core_of = SOM
-		add_core_of = ORO
+		
+		
 
 		1936.6.1 = {
 			owner = TER

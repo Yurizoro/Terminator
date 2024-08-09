@@ -13,7 +13,7 @@ state = {
 
 		owner = TER
 		add_core_of = TER
-		add_core_of = WLA
+		
 
 		buildings = {
 			infrastructure = 1

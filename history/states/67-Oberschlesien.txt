@@ -22,7 +22,7 @@ state={
 			infrastructure = 3
 		}
 		add_core_of = TER
-		add_core_of = SIL
+		
 	}
 
 	provinces={

@@ -24,14 +24,14 @@ state= {
 		}
 		add_core_of = TER
 
-		2018.1.1.1 = { 
+		2018.1.1 = { 
 			if = {
 				limit = { has_dlc = "Battle for the Bosporus" }
 				set_demilitarized_zone = no
 			}
 		}
 
-		2018.11.9.1 = {
+		2018.11.9 = {
 			set_demilitarized_zone = no
 		}
 	}

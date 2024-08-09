@@ -1,0 +1,9 @@
+on_actions = {
+    on_startup = {
+		effect = {
+			SOP = {
+				country_event = SOP.start
+			}
+		}
+	}
+}

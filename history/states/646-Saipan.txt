@@ -8,7 +8,7 @@ state=
 	{
 		owner = TER
 		add_core_of = TER
-		add_core_of = GUM
+		
 		buildings = {
 			infrastructure = 2
 			air_base = 3
