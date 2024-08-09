@@ -8,13 +8,11 @@ state={
 
 	history={
 		owner = TCL
-        add_core_of = SOP
 
 		buildings = {
 			infrastructure = 2
 		}
 		
-
 		victory_points = {
 			8097 10
 		}

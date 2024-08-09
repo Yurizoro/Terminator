@@ -8,7 +8,6 @@ state={
 	
 	history={
 		owner = TCL
-        add_core_of = SOP
 
 		buildings = {
 			infrastructure = 2

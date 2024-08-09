@@ -1,4 +1,4 @@
-capital = 378
+capital = 484
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
@@ -46,7 +46,7 @@ set_popularities = {
 
 TCL = {
 	every_owned_state = {
-		        add_core_of = SOP
-
+		add_core_of = SOP
+		add_core_of = TCL
 	}
 }

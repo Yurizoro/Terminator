@@ -53,13 +53,6 @@ create_country_leader = {
 	}
 }
 
-TCL = {
-	every_owned_state = {
-		        add_core_of = SOP
-
-	}
-}
-
 add_ideas = {
 	machine_supremacy
 }
